@@ -18,3 +18,6 @@ This repository tracks my journey to passing the **LPI Linux Essentials (010-160
 - [View Lab Setup Guide](./Lab-Setup.md)
 - [Week 1: Evolution & Philosophy](./Phase-01-Basics/Week-01.md)
 - [Week 1: Knowledge Check](./Quizzes/Week-01-Quiz.md)
+
+## 🏅 Certification Progress
+![Week 1 Results](./images/week1-results.png)
