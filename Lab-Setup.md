@@ -1,14 +1,14 @@
 # 🛠️ Lab Setup: The Nested Hypervisor
-This lab uses a "Nested Virtualization" stack to simulate a real enterprise environment.
+This lab uses a "Nested Virtualization" stack to simulate an enterprise data center environment on a single machine.
 
-## The Stack
+## The Hardware/Software Stack
 1. **Physical Host:** Fedora Linux
-2. **Type 2 Hypervisor:** Virtual Machine Manager (virt-manager) / KVM
-3. **Type 1 Hypervisor (Nested):** Proxmox VE 8.x
-4. **Study Nodes (LXC/VM):** - Debian 12 (Target for APT testing)
-   - Rocky Linux 9 (Target for DNF testing)
+2. **Layer 1 (L1) Hypervisor:** KVM/QEMU via `virt-manager`.
+3. **Layer 2 (L2) Hypervisor:** Proxmox VE 8.x (Nested).
+4. **Guest VMs:** - Debian 12
+   - Rocky Linux 9
 
-## Configuration Notes
-- **Nested VT-x:** Enabled on the Fedora host to allow Proxmox to run KVM.
-- **Network:** Bridged networking via `vmbr0` in Proxmox.
-- **CPU Type:** Set to 'Host' for maximum performance in the inner VMs.
+## Technical Configuration
+- **CPU Passthrough:** The Proxmox VM is set to `Host` CPU type in `virt-manager` to enable Nested VT-x/AMD-V.
+- **Verification:** `cat /sys/module/kvm_intel/parameters/nested` returns `Y`.
+- **Networking:** Virtual Bridge (`vmbr0`) handles traffic between the Debian/Rocky guests and the Fedora host.
