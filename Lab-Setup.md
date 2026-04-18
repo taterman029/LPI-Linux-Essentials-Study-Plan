@@ -1,5 +1,10 @@
 # 🛠️ Lab Setup: The Nested Hypervisor
-This lab uses a "Nested Virtualization" stack to simulate an enterprise data center environment on a single machine.
+This lab uses a "Nested Virtualization" stack to simulate an enterprise data center environment.
+
+## Repository Information
+- **Official Project Name:** LPI-Linux-Essentials-Study-Plan
+- **Primary Host:** Fedora Linux
+
 
 ## The Hardware/Software Stack
 1. **Physical Host:** Fedora Linux
