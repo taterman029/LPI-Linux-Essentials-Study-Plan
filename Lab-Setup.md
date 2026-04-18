@@ -2,7 +2,7 @@
 This lab uses a "Nested Virtualization" stack to simulate an enterprise data center environment.
 
 ## Repository Information
-- **Official Project Name:** LPI-Linux-Essentials-Study-Plan
+- **Official Project Name:** LPI-Linux-Essentials-Study-Plan (12 Weeks)
 - **Primary Host:** Fedora Linux
 
 
