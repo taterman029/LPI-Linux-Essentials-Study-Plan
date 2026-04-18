@@ -11,7 +11,7 @@ This lab uses a "Nested Virtualization" stack to simulate an enterprise data cen
 2. **Layer 1 (L1) Hypervisor:** KVM/QEMU via `virt-manager`.
 3. **Layer 2 (L2) Hypervisor:** Proxmox VE 8.x (Nested).
 4. **Guest VMs:** - Debian 12
-                  - Rocky Linux 9
+     - Rocky Linux 9
 
 ## Technical Configuration
 - **CPU Passthrough:** The Proxmox VM is set to `Host` CPU type in `virt-manager` to enable Nested VT-x/AMD-V.
